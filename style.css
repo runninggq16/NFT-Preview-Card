@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    /*background-color: hsl(216, 50%, 16%);*/       /*gives control of divs w/in card*/
+    display: flex;              /*auto makes into row; correct direction if needed*/
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 510px;
+    padding: 0px 15px 0px 15px;
+    border-radius: 24px;
+    
+
+}
+
+.img{
+    
+    display: flex;
+    margin: auto;           /* another way to center img within container*/
+    border-radius: 10px;
+    width: 280px;
+    height: 280px;
+    background-image: url("./images/image-equilibrium.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+}
+
+
+.textContent{
+    
+    /*width: 280px;*/
+    height: 80px;
+}
+
+.textContent p:first-child{
+   
+    
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 600;
+    /*padding: 0px 0px 10px 0px; */
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.textContent p:last-child{
+    color: hsl(215, 51%, 70%);
+}
+
+
+.stats{
+    
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+}
+
+
+.stats p:first-child{
+    color: hsl(178, 100%, 50%);
+    /*padding-right: 150px;*/
+    font-weight: 600;
+    display: flex;
+    background-image: url("./images/icon-ethereum.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+
+.stats p:last-child{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    background-image: url("./images/icon-clock.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+
+.authorBlock{
+    color: hsl(0, 0%, 100%);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-top-style:solid;
+    border-color: hsl(215, 32%, 27%);
+    
+
+}
+
+.imgProfile{
+    background-image: url("./images/image-avatar.png");
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+}
+.authorBlock span{
+    color: hsl(215, 51%, 70%);
+    padding-left: 15px;
+}
